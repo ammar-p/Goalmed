@@ -1,0 +1,818 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+/*font-family: 'Montserrat Alternates', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+/*font-family: 'Pacifico', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+/*font-family: 'Caveat', cursive;*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    overflow-x: hidden;
+    background-color: white;
+
+    background-image: url('background4.jpg');
+
+}
+.space {
+    opacity: 0;
+    height: 13vw;
+    width: 100%;
+}
+.space2 {
+    opacity: 0;
+    height: 13vw;
+    width: 100%;
+}
+/* -------------------------------------------------------------- intro ------------------------------------------------------ */
+
+.intro{
+    background: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    z-index: 4;
+}
+.intro-parent {
+    position: absolute;
+}
+.intro-logo {
+    padding-top: 13vw;
+    padding-right: 15.6vw;
+    position: relative;
+}
+.intro-logo2 {
+    top: 14.6vw;
+    right: 17.38vw;
+    position: absolute;
+}
+.intro-text {
+    color: rgb(0,136,169);;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 1.72vw;
+    padding-top: 13.78vw;
+    padding-left: 10.92vw;
+}
+.slider{
+    background: rgba(0,136,169,0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+.hide {
+    background: white;
+    overflow: hidden;
+}
+.hide span {
+    transform: translateX(-200%);
+    display: inline-block;
+}
+/*-----------------------------------------------------  Contact bar   --------------------------------------------------------*/
+.contact-bar{
+    position: relative;
+    display: flex;
+    background-color: rgb(41, 138, 184);
+    height: 1.82vw;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    z-index: 6;
+}
+.contact-text{
+    font-size: 1vw;
+    color: white;
+    margin-right: .3vw;
+    font-weight: lighter;
+}
+.email-icon{
+    margin-top: .2vw;
+    margin-left: 19vw;
+    width: 3.26vw;
+}
+.phone-text{
+    font-size: 1vw;
+    margin-right: .5vw;
+    color: white;
+    font-weight: lighter;
+}
+.phone-icon{
+    margin-left: 0vw;
+    width:1.82vw;
+}
+/* -----------------------------------------------------  Nav bar style  -------------------------------------------------- */
+
+nav {
+    background-color: rgb(255, 255, 255, .92);
+    height: 4.16vw;
+    width: 100%;
+    list-style: none;
+    top: 0;
+    height: 6.24vw;
+    opacity: 1;
+    position: fixed;
+    display: flex;
+    z-index: 6;
+    top: 1.8vw;
+}
+
+nav ul {
+    
+    float:none;
+    display:inline-block;
+    *display:inline; 
+    *zoom:1; 
+    vertical-align: top;
+    text-align: center;
+    margin-top: 1.04vw;
+    padding-right: 4vw;
+}
+
+
+
+.logo{
+    height: 3.8vw;
+    margin-top: 1vw; 
+    margin-left:  19.5vw;
+    padding-right: 7vw;
+ }
+
+
+nav ul {
+    float: right;
+    margin-right: 13vw;
+    position: relative;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 4.16vw;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: .884vw;
+    padding-right: .7vw;
+    padding-left: .7vw;
+    padding-top: .3vw;
+    padding-bottom: .3vw;
+    border-radius: .78vw;
+}
+a.active, a:hover {
+    background: rgb(187, 187, 187);
+    transition: .5s ease;
+}
+.check {
+    position: absolute;
+    left: 89.9%;
+    top: .9vw;
+    font-size: 2.56vw;
+    color: rgb(62, 170, 202);
+    line-height: 4.16vw;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+
+/* -------------------------------------------------------    hero section   ------------------------------------------------------- */
+.hero1{
+    width: 84.8%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.hero1-bg{
+    background-color: rgb(131, 131, 131);
+    margin-left: 3.6vw;
+}
+
+.hero1-img{
+    width: 80vw;
+    margin-right: .52vw;
+    margin-bottom: .468vw;
+    opacity: .9;
+}
+.hero1-text{
+    margin-top: 3%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3vw;
+    color: rgb(136, 129, 129);
+    position: absolute;
+    top: 10%;
+    left: 15%;
+}
+.slogan{
+    margin-top: 1.5%;
+    font-size: 1.5vw;
+    margin-bottom: 4%;
+    font-weight: 200;
+}
+.button{
+    border-radius: .104vw;
+    background-color: rgb(54, 121, 141);
+    color: white;
+    font-size: 1.5vw;
+    text-decoration: none;
+    padding: .26vw .52vw;
+    font-weight: 500;
+}
+.button:hover{
+    font-size: 1.6vw;
+    background-color: rgb(40, 158, 255);
+    color: rgb(222, 226, 228);
+}
+
+/* --------------------------------------------------   Products   --------------------------------------------------*/
+
+
+.products-header{
+    font-weight: lighter;
+    font-size: 2.8vw;
+    text-align: center;
+    padding: 7vw 0 3vw 0;
+}
+
+.products{
+    position: relative;
+    display: flex;
+    background-color: rgb(150, 150, 150);
+    align-items: center;
+    width: 57.7%;
+    margin-left: 23%;
+}
+.diabetes{
+    flex: 1;
+    width: 19vw;
+}
+.surgery{
+    flex: 2;
+    width: 19vw;
+    
+}
+.mask{
+    flex: 3;
+    width: 19vw;
+}
+.diabetes:hover{
+opacity: .6;
+transition: .4s ease;
+}
+.surgery:hover{
+opacity: .6;
+transition: .4s ease;
+
+}
+.mask:hover{
+opacity: .6;
+transition: .4s ease;
+
+}
+.diabetes-text{
+    position: absolute;
+    color: white;
+    margin-top: 33%;
+    font-size: 1.4vw;
+    background-color: rgb(145, 138, 138);
+    height: 6.2vw;
+    width: 19vw;
+    opacity: .7;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 1vw;
+}
+.button1{
+    margin-top: 38%;
+    margin-left: 12%;
+    position: absolute;
+    border-radius: .104vw;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 1vw;
+    text-decoration: none;
+    padding: .26vw .52vw;
+    font-weight: 500;
+}
+.button1:hover{
+    font-size: 1.1vw;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.surgery-text{
+    position: absolute;
+    color: white;
+    margin-left: 33.3%;
+    margin-top: 33%;
+    font-size: 1.4vw;
+    background-color: rgb(145, 138, 138);
+    height: 6.2vw;
+    width: 19vw;
+    opacity: .7;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 1vw;
+}
+.button2{
+    margin-top: 38%;
+    margin-left: 45.3%;
+    position: absolute;
+    border-radius: .104vw;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 1vw;
+    text-decoration: none;
+    padding: .26vw .52vw;
+    font-weight: 500;
+}
+.button2:hover{
+    font-size: 1.1vw;
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.mask-text{
+    font-size: 1.4vw;
+    position: absolute;
+    color: white;
+    margin-left: 66.6%;
+    margin-top: 33%;
+    background-color: rgb(145, 138, 138);
+    height: 6.2vw;
+    width: 19vw;
+    opacity: .7;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 1vw;
+}
+.button3{
+    margin-top: 38%;
+    margin-left: 78.6%;
+    position: absolute;
+    border-radius: .104vw;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 1vw;
+    text-decoration: none;
+    padding: .26vw .52vw;
+    font-weight: 500;
+}
+.button3:hover{
+    font-size: 1.1vw;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+/*----------------------------------------*/
+
+.products2{
+    position: relative;
+    display: flex;
+    background-color: rgb(150, 150, 150);
+    align-items: center;
+    width: 57.7%;
+    margin-left: 23%;
+    margin-top: 2vw;
+}
+.urology{
+    flex: 1;
+    width: 19vw;
+}
+.chart{
+    flex: 2;
+    width: 19vw;
+    
+}
+.steri{
+    flex: 3;
+    width: 19vw;
+}
+.urology:hover{
+opacity: .6;
+transition: .4s ease;
+}
+.chart:hover{
+opacity: .6;
+transition: .4s ease;
+
+}
+.steri:hover{
+opacity: .6;
+transition: .4s ease;
+
+}
+.urology-text{
+    position: absolute;
+    color: white;
+    margin-top: 23%;
+    font-size: 1.4vw;
+    background-color: rgb(145, 138, 138);
+    height: 6.2vw;
+    width: 19vw;
+    opacity: .7;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 1vw;
+}
+.button12{
+    margin-top: 28%;
+    margin-left: 12%;
+    position: absolute;
+    border-radius: .104vw;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 1vw;
+    text-decoration: none;
+    padding: .26vw .52vw;
+    font-weight: 500;
+}
+.button12:hover{
+    font-size: 1.1vw;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.chart-text{
+    position: absolute;
+    color: white;
+    margin-left: 33.3%;
+    margin-top: 23%;
+    font-size: 1.4vw;
+    background-color: rgb(145, 138, 138);
+    height: 6.2vw;
+    width: 19vw;
+    opacity: .7;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 1vw;
+}
+.button22{
+    margin-top: 28%;
+    margin-left: 45.3%;
+    position: absolute;
+    border-radius: .104vw;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 1vw;
+    text-decoration: none;
+    padding: .26vw .52vw;
+    font-weight: 500;
+}
+.button22:hover{
+    font-size: 1.1vw;
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.steri-text{
+    font-size: 1.4vw;
+    position: absolute;
+    color: white;
+    margin-left: 66.6%;
+    margin-top: 23%;
+    background-color: rgb(145, 138, 138);
+    height: 6.2vw;
+    width: 19vw;
+    opacity: .8;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 1vw;
+}
+.button32{
+    margin-top: 28%;
+    margin-left: 78.6%;
+    position: absolute;
+    border-radius: .104vw;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 1vw;
+    text-decoration: none;
+    padding: .26vw .52vw;
+    font-weight: 500;
+}
+.button32:hover{
+    font-size: 1.1vw;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+/*---------------------------------------------------------  Map  ------------------------------------------------------- */
+
+.location{
+    width: 80%;
+    margin-left: 13%;
+    height: 23.5vw;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    position: relative;
+}
+.location iframe{
+    margin-left: 46%;
+    width: 36.4vw;
+    height: 23.4vw;
+}
+.location h1{
+    position: absolute;
+    margin-left: 18%;
+    font-weight: 700;
+    font-size: 2.2vw;
+}
+.address{
+    width: 2.7vw;
+    height: 2.7vw;
+    position: absolute;
+    margin-left: 8%;
+    margin-top: 6%;
+    opacity: .9;
+}
+.number{
+    width: 2.7vw;
+    height: 2.7vw;
+    position: absolute;
+    margin-left: 8%;
+    margin-top: 12%;
+    opacity: .9;
+}
+.email{
+    width: 2.7vw;
+    height: 2.7vw;
+    position: absolute;
+    margin-left: 8%;
+    margin-top: 18%;
+    opacity: .9;
+}
+.fax{
+    width: 2.7vw;
+    height: 2.7vw;
+    position: absolute;
+    margin-left: 8%;
+    margin-top: 24%;
+    opacity: .9;
+}
+.address-text{
+    font-size: 1.2vw;
+    position: absolute;
+    margin-left: 16%;
+    margin-top: 7%;
+    font-weight: lighter;
+}
+.number-text{
+    font-size: 1.2vw;
+    position: absolute;
+    margin-left: 16%;
+    margin-top: 13%;
+    font-weight: lighter;
+}
+.email-text{
+    font-size: 1.2vw;
+    position: absolute;
+    margin-left: 16%;
+    margin-top: 19%;
+    font-weight: lighter;
+
+}
+.fax-text{
+    font-size: 1.2vw;
+    position: absolute;
+    margin-left: 16%;
+    margin-top: 25%;
+    font-weight: lighter;
+}
+
+
+/*-------------------------------------------------- Contact-from -------------------------------------------------- */
+.form-header{
+    font-weight: lighter;
+    font-size: 2.8vw;
+    text-align: center;
+    padding: 8vw 0 3vw 0;
+}
+
+.form-div{
+    background-color: rgb(255, 255, 255);
+    border-radius: .52vw;
+    width: 55%;
+    height: 33vw;
+    margin-left: 23%;
+    margin-bottom: 9vw;
+    position: relative;
+    display: flex;
+}
+form label{
+    font-size: 1vw;
+}
+input, textarea{
+    opacity: .6;
+    background-color: white;
+    border-radius: .104vw;
+    width: 30%;
+    margin-bottom: 1.26vw;
+    margin-top: .416vw;
+    font-size: 1vw;
+    font-family: 'Montserrat Alternates', sans-serif;
+    border-color: rgb(16, 163, 173);
+    width: 19vw;
+    height: 1.8vw;
+    border-width: .052vw;
+    outline: none;
+    padding: .5vw;
+}
+form textarea{
+    width: 44vw;
+    height: 8vw;
+    padding-bottom: .9vw;
+}
+#name{
+    position: absolute;
+    left: 5vw;   
+    top: 6vw;
+}
+.name-label{
+    position: absolute;
+    left: 5vw;
+    top: 5vw;
+}
+#number{
+    position: absolute;
+    left: 29.7vw;
+    top: 6vw;
+}
+.number-label{
+    position: absolute;
+    left: 29.7vw;
+    top: 5vw;
+}
+#email{
+    position: absolute;
+    left: 5vw;
+    top: 11.3vw;
+}
+.email-label{
+    position: absolute;
+    left: 5vw;
+    top: 10vw;
+}
+#location{
+    position: absolute;
+    left: 29.7vw;
+    top: 11.3vw;
+}
+.location-label{
+    position: absolute;
+    left: 29.7vw;
+    top: 10vw;
+}
+#massege{
+    position: absolute;
+    left: 5vw;
+    top: 18vw;
+}
+.massege-label{
+    position: absolute;
+    left: 5vw;
+    top: 16.7vw;
+}
+
+/* -------------------------------------------------- Pre-footer -------------------------------------------------- */
+.pre-footer{
+    width: 100%;
+    height: 23vw;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    position: relative;
+    display: flex;
+}
+.info-header{
+    font-size: 1.1vw;
+    padding-left: .2vw;
+    border-left: solid;
+    border-color: rgb(41, 138, 184);
+    border-width: .2vw;
+    margin-top: 1vw;
+}
+.info{
+margin-left: 12%;
+margin-right: 3%;
+}
+.links{
+    margin-left: 5%;
+}
+.social{
+    margin-left: 10%;
+}
+.pre-footer h1{
+    font-size: .8vw;
+    padding: 1.5vw 0 .3vw 0;
+}
+.pre-footer h3{
+    font-size: .7vw;
+    font-weight: lighter;
+}
+
+.links-header{
+    font-size: 1.1vw;
+    padding-left: .2vw;
+    border-left: solid;
+    border-color: rgb(41, 138, 184);
+    border-width: .2vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+.pre-footer h2{
+    font-size: .8vw;
+    font-weight: lighter;
+    border-bottom: solid;
+    border-color: white;
+    border-width: .052vw;
+    width: 16vw;
+    margin: .3vw 0 1vw 0;
+    padding-bottom: .2vw;
+}
+.pre-footer a{
+    text-decoration: none;
+    color: white;
+}
+.pre-footer h2:hover{
+    color: rgb(40, 158, 255);
+    transition: .4s ease;
+}
+.pre-footer h3:hover{
+    color: rgb(40, 158, 255);
+    transition: .4s ease;
+}
+.social-header{
+    font-size: 1.1vw;
+    padding-left: .2vw;
+    border-left: solid;
+    border-color: rgb(41, 138, 184);
+    border-width: .2vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+.social{
+    position: relative;
+}
+.footer-logo{
+    width: 9vw;
+    margin-bottom: 1vw;
+    margin-left: 0%;
+}
+
+.icons-div img{
+    width: 1.5vw;
+    margin-right: .7vw;
+}
+
+.insta:hover{
+    width: 2vw;
+    transition: .4s ease;
+
+}
+.facebook:hover{
+    width: 2vw;
+    transition: .4s ease;
+
+}
+.twitter:hover{
+    width: 2vw;
+    transition: .4s ease;
+
+}
+
+
+/*  -------------------------------------------------- Footer --------------------------------------------------  */
+.footer{
+    font-size: .9vw;
+    display: flex;
+    width: 100%;
+    position: relative;
+    background-color: rgb(41, 138, 184);
+    color: rgb(255, 255, 255);
+    padding: .52vw 3.26vw;
+    margin-top: 0%;
+    justify-content: center;
+}
+.footer-btn{
+    position: absolute;
+    left: 89%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 1.56vw;
+    padding: .156vw .52vw;
+    text-decoration: none;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
